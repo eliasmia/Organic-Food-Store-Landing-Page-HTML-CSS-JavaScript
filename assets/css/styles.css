@@ -1,0 +1,52 @@
+/*============ header style ============*/
+.header {
+    position: relative;
+    z-index: 999;
+    background: #F3FCF7;
+    padding: 30px 0;
+}
+.header .container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+}
+.header .logo img {
+	width: 100px;
+}
+
+.navigation ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.navigation ul li a {
+	color: #34374c;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 12px 20px;
+	display: block;
+	position: relative;
+}
+.navigation ul li a::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #27AE60;
+    transition: width 0.3s;
+    border-radius: 100%;
+		margin: auto;
+		position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+		opacity: 0;
+}
+.navigation ul li a.active:after,
+.navigation ul li a:hover::after {
+		opacity: 1;
+}
+.navigation ul li a.active,
+.navigation ul li a:hover {
+	color: #27AE60;
+}

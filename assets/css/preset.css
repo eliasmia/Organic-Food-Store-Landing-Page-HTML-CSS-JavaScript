@@ -1,0 +1,116 @@
+/*
+  Theme Name: cloud | Creative cloud HTML5 Responsive Template
+  Theme URL: http://clouttheme.com/html/
+  Author: Clouttheme
+  Author URI: http://www.clouttheme.net
+  Description: Creative Agency HTML5 Responsive Template
+  Version: 1.0
+*/
+/*=======================================================================
+[Table of contents]
+=========================================================================
+1. Font Include
+2. Normalization
+3. Common Content
+4. Margin and padding settings
+========================================================================*/
+/* Google Font Include */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Normalization */
+body{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+} 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    line-height: .9;
+    font-weight: 700;
+    color: #34374c;
+    font-family: "Inter", sans-serif;
+}
+p{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #3f4360;
+    line-height: 1.2222;
+}
+ul, ol, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a, a:hover,a:focus{
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+}
+a:hover,a:focus{
+    color: inherit;
+}
+a{
+    -webkit-transition: all 700ms ease;
+    -moz-transition: all 700ms ease;
+    -ms-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+/*==============  Common Content =============**/
+.common-tittle{
+    color: #34374c;
+    font-size: 49px;
+    padding: 0 0 75px;
+    text-align: center;
+}
+.white{
+    color: #fff !important;
+}
+
+/*==============  Margin and padding settings =============**/
+.p-0{
+    padding: 0 !important;
+}
+/*============== sticky-wrapper =============**/
+.is-sticky .navbar-wrapper {
+	padding:0px;
+	z-index: 999;
+	border:1px solid #f00;
+}
+/********Scroll Up*******/
+.scrollup {
+	background-color: rgba(0, 0, 0, 0.5);
+	bottom: 40px;
+	color: #ffffff;
+	display: none;
+	font-size: 40px;
+	height: 40px;
+	line-height: 35px;
+	position: fixed;
+	right: 40px;
+	text-align: center;
+	width: 40px;
+	-webkit-transition:all 700ms ease;
+	-moz-transition:all 700ms ease;
+	-ms-transition:all 700ms ease;
+	-o-transition:all 700ms ease;
+	transition:all 700ms ease
+}
+.scrollup:hover {
+	color: #fff;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
