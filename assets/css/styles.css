@@ -50,3 +50,243 @@
 .navigation ul li a:hover {
 	color: #27AE60;
 }
+
+/*============ Banner style ============*/
+
+
+/*============ Our Product Section style ============*/
+.our-product{
+	padding: 80px 0 60px 0;
+	background-color: #fff;
+	text-align: center;
+}
+.products-content{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+	margin-top: 60px;
+	text-align: center;
+}
+.products-content .product-boxes{
+	border: 2px solid rgba(118, 118, 117, 0.25);
+	padding: 30px 40px;
+	-webkit-transition: all 700ms ease;
+		-moz-transition: all 700ms ease;
+		-ms-transition: all 700ms ease;
+		-o-transition: all 700ms ease;
+		transition: all 700ms ease;
+}
+.products-content .product-boxes:hover{
+	border-color: #06C167;
+}
+.products-content .product-boxes-thumb{
+	width: 190px;
+	height: 190px;
+	margin: auto auto 20px auto;
+}
+.product-boxes-info{
+	padding: 15px 0px  0px 0px;
+}
+.product-boxes-rating{
+	margin-bottom: 20px;
+	display: inline-flex;
+	gap: 5px;
+}
+.product-boxes-rating i {
+    color: #06C167;
+    font-size: 1rem;
+}
+.product-boxes-info h3{
+	color: #1D1D1F;
+	font-weight: 400;
+	font-size: 1.25rem;
+	margin-bottom: 20px;
+}
+.price-boxes{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 1.1;
+	margin-bottom: 28px;
+}
+.price-boxes .old-price{
+	text-decoration: line-through;
+	color: #767675;
+	font-weight: 600;
+}
+.price-boxes .price{
+	color: #06C167;
+	font-weight: 400;
+}
+.product-boxes-info a.buy-now-btn{
+	display: inline-flex;
+	gap: 24px;
+	padding: 18px 30px;
+	background-color: #fff;
+	border: 2px solid #06C167;
+	color: #06C167;
+	font-weight: 500;
+	font-size: 1rem;
+	cursor: pointer;
+	-webkit-transition: all 700ms ease;
+		-moz-transition: all 700ms ease;
+		-ms-transition: all 700ms ease;
+		-o-transition: all 700ms ease;
+		transition: all 700ms ease;
+}
+.product-boxes-info a.buy-now-btn:hover{
+	background-color: #27AE60;
+	border: 1px solid #27AE60;
+	color: #fff;
+}
+/*============ Veggie Foods Section style ============*/
+.veggie-foods{
+	padding: 80px 0 60px 0;
+	background-color: #fff;
+	text-align: center;
+}
+.veggie-foods .container{
+	padding: 100px 40px 80px 40px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+  overflow: hidden;
+}
+.veggie-foods .container::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(2, 2, 2, 0.59);
+		z-index: 0;
+}
+.veggie-foods .container h3 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 1.1;
+    text-align: center;
+		position: relative;
+}
+.veggie-foods .container a.get-started-btn{
+	font-weight: 400;
+	font-size: 1rem;
+	display: inline-flex;
+	gap: 10px;
+	padding: 28px 40px;
+	background-color: #06C167;
+	border: 1px solid #06C167;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	-webkit-transition: all 700ms ease;
+	-moz-transition: all 700ms ease;
+	-ms-transition: all 700ms ease;
+	-o-transition: all 700ms ease;
+	transition: all 700ms ease;
+}
+.veggie-foods .container a.get-started-btn:hover{
+	background-color: #27AE60;
+	border: 1px solid #27AE60;
+}
+/*============ Footer style ============*/
+.footer{
+	padding: 70px 0 36px 0;
+	background-color: #F3FCF7;
+}
+.footer-content {
+	display: grid;
+	grid-template-columns: 2fr repeat(2, 1fr) 1.8fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 100px;
+	grid-row-gap: 0px;
+	padding-bottom: 80px;
+}
+.footer-logo {
+  margin-bottom: 40px;
+  max-width: 110px;
+}
+.footer-social{
+	margin: 40px 0 0 0;
+}
+.footer-social a{
+	display: inline-block;
+	text-align: center;
+	color: #1D1D1F;
+	margin-right: 20px;
+	-webkit-transition: all 700ms ease;
+		-moz-transition: all 700ms ease;
+		-ms-transition: all 700ms ease;
+		-o-transition: all 700ms ease;
+		transition: all 700ms ease;
+}
+
+.footer-box h3{
+	color: #1D1D1F;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	margin-bottom: 40px;
+}
+.footer-box ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.footer-box ul li{
+	margin-bottom: 12px;
+}
+.footer-box ul li a{
+	color: #1D1D1F;
+	font-weight: 400;
+	font-size: 16px;
+}
+.subscribe{
+	display: flex;
+	margin-top: 30px;
+	gap: 10px;
+}
+.subscribe input{
+	padding: 12px 20px;
+	width: calc(100% - 130px);
+	outline: none;
+	background-color: #F0F1EC;
+	border: 1px solid #F0F1EC;
+	font-weight: 400;
+	font-size: 0.875rem;
+	color: #1D1D1F;
+}
+.subscribe button{
+	padding: 12px 20px;
+	background-color: #27AE60;
+	border: 1px solid #27AE60;
+	color: #fff;
+	font-weight: 500;
+	font-size: 0.875rem;
+	cursor: pointer;
+	-webkit-transition: all 700ms ease;
+		-moz-transition: all 700ms ease;
+		-ms-transition: all 700ms ease;
+		-o-transition: all 700ms ease;
+		transition: all 700ms ease;
+	}
+.footer-social a:hover,
+.footer-box ul li a:hover{
+	color: #27AE60;
+}
+.copyright p{
+	text-align: center;
+	color: #1D1D1F;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 100%;
+
+}

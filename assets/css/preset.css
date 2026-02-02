@@ -37,10 +37,12 @@ h1,h2,h3,h4,h5,h6{
 }
 p{
     font-family: "Inter", sans-serif;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 400;
     color: #3f4360;
     line-height: 1.2222;
+    margin: 0;
+    padding: 0;
 }
 ul, ol, li{
     margin: 0;
@@ -67,12 +69,24 @@ img{
     height: auto;
 }
 /*==============  Common Content =============**/
-.common-tittle{
-    color: #34374c;
-    font-size: 49px;
-    padding: 0 0 75px;
-    text-align: center;
+.section-header{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1D1D1F;
 }
+
+.pre-header{
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1D1D1F;
+}
+
 .white{
     color: #fff !important;
 }
