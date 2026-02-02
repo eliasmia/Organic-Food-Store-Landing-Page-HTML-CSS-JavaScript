@@ -52,8 +52,288 @@
 }
 
 /*============ Banner style ============*/
+.banner{
+	padding: 150px 0 100px 0;
+}
+.banner::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 700px;
+	background-color: #F3FCF7;
+	z-index: 0;
+}
+.banner .banner-content{
+	display: grid;
+	grid-template-columns: 1.2fr 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 100px;
+	grid-row-gap: 0px;
+}
+.banner-text {
+	padding: 40px 0 0 0;
+  max-width: 84%;
+}
+.banner-text h1{
+	font-weight: 600;
+	font-size: 4.688rem;
+	line-height: 1.1;
+	letter-spacing: 0;
+	color: #1D1D1F;
+	margin-bottom: 24px;
+}
+.banner-text p {
+    margin-bottom: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.ratings {
+    position: absolute;
+    top: 42%;
+    left: -90px;
+    background-color: #fff;
+    padding: 15px 18px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 0.938rem;
+    color: #1D1D1F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.ratings .stars i{
+	font-size: 0.938rem;
+	color: #06C167;
+}
+.quality-product {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: #fff;
+  padding: 6px 16px 6px 6px;
+  border-radius: 30px;
+  position: absolute;
+  top: 29%;
+  right: -42px;
+}
+.quality-product img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.quality-product p{
+	font-weight: 500;
+	font-size: 0.938rem;
+	line-height: 1.1%;
+	letter-spacing: 0;
+	padding: 0;
+	margin: 0;
+}
+.company-logo {
+    position: relative;
+    top: -80px;
+}
+.company-logo ul{
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	gap: 50px;
+}
+/*============ Features Section style ============*/
+.features-section{
+	padding: 80px 0 60px 0;
+	background-color: #fff;
+}
+.features-section .container {
+    display: flex;
+    gap: 50px 30px;
+    border-top: 1.5px solid #70707047;
+    border-bottom: 1.5px solid #70707047;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+.feature-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	gap: 50px;
+}
+.feature-box .feature-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #F3FCF7;
+    color: #06C167;
+    border-radius: 16px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature-box  .feature-info h3{
+	font-weight: 500;
+	font-size: 1.25rem;
+	line-height: 1.1;
+	letter-spacing: 0;
+	color: #1D1D1F;
+	margin-bottom: 8px;
+}
+.feature-box  .feature-info p{
+	font-weight: 500;
+	font-size: 0.875rem;
+	line-height: 1.1;
+	letter-spacing: 0;
+	color: #1D1D1F;
+	margin-bottom: 0;
+}
+/*============ Our Benefit Section  style ============*/
+.our-benefit{
+	padding: 80px 0;
+	background-color: #fff;
+}
+.our-benefit .container{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 30px;
+	grid-row-gap: 0px;
+}
+.benefit-left{
+	background: #F3FAFB;
+	padding: 0 48px 80px 48px;
+}
+.benefit-left img{
+	width: 100%;
+}
+.benefit-right{
+	padding: 80px 0 0 50px;
+	position: relative;
+	overflow: hidden;
+}
+.benefit-right ul li a{
+	font-weight: 400;
+	font-size: 1rem;
+	color: #1D1D1F;
+	margin-bottom: 20px;
+	display: inline-flex;
+	align-items: center;
+	gap: 15px;
+	line-height: 1.1;
+	letter-spacing: 0;
+}
+.benefit-right ul li a i{
+	color: #06C167;
+	font-size: 1.25rem;
+}
+/*============ Our Stars Section style ============*/
+.our-stars{
+	padding: 80px 0;
+	text-align: center;
+}
+.our-stars .container{
+	display: grid;
+	grid-template-columns: 1.1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 60px;
+	grid-row-gap: 0px;
+	}
+.stars-left {
+    padding: 70px 0 0 0;
+}
+.product-counter {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 80px;
+    margin-bottom: 50px;
+}
+.counter-item .counter{
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: #06C167;
+	line-height: 1.1;
+	letter-spacing: 0;
+	display: block;
+	margin-bottom: 15px;
+}
+.counter-item p{
+	font-size: 0.938rem;
+	line-height: 1.1;
+	font-weight: 400;
+	letter-spacing: 0;
+	color: #1D1D1F;
+}
+.stars-right{
+	text-align: right;
+	background-color: #F3FAFB;
+	padding: 0 0 98px 98px;
+}
+.stars-right img{
+	max-width: 445px;
+}
+/*============ Our Features style ============*/
+.our-features{
+		padding: 100px 0 80px 0;
+		background-color: #fff;
+		text-align: center;
+}
+.features-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-item-img {
+    width: 50%;
+}
+.feature-item-info {
+	padding: 40px 24px 20px 24px;
+	border: 1px solid #06C167;
+	height: 280px;
+	width: 50%;
+}
+.feature-item:nth-child(4n + 3),
+.feature-item:nth-child(4n + 4) {
+	flex-direction: row-reverse;
+}
+.feature-item-info h3{
+	font-weight: 500;
+	font-size: 2rem;
+	line-height: 1.1;
+	color: #1D1D1F;
+	margin-bottom: 24px;
+}
+.feature-item-info p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    max-width: 165px;
+}
+.feature-item-info a{
+	font-weight: 500;
+	font-size: 0.938rem;
+   background: #E6F9F0;
+	 padding: 10px 14px;
+	 color: #06C167;
 
 
+}
 /*============ Our Product Section style ============*/
 .our-product{
 	padding: 80px 0 60px 0;
@@ -175,31 +455,10 @@
     text-align: center;
 		position: relative;
 }
-.veggie-foods .container a.get-started-btn{
-	font-weight: 400;
-	font-size: 1rem;
-	display: inline-flex;
-	gap: 10px;
-	padding: 28px 40px;
-	background-color: #06C167;
-	border: 1px solid #06C167;
-	color: #fff;
-	cursor: pointer;
-	position: relative;
-	-webkit-transition: all 700ms ease;
-	-moz-transition: all 700ms ease;
-	-ms-transition: all 700ms ease;
-	-o-transition: all 700ms ease;
-	transition: all 700ms ease;
-}
-.veggie-foods .container a.get-started-btn:hover{
-	background-color: #27AE60;
-	border: 1px solid #27AE60;
-}
+
 /*============ Footer style ============*/
 .footer{
 	padding: 70px 0 36px 0;
-	background-color: #F3FCF7;
 }
 .footer-content {
 	display: grid;

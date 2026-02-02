@@ -38,8 +38,8 @@ h1,h2,h3,h4,h5,h6{
 p{
     font-family: "Inter", sans-serif;
     font-size: 1rem;
-    font-weight: 400;
-    color: #3f4360;
+    font-weight: 500;
+    color: #1D1D1F;
     line-height: 1.2222;
     margin: 0;
     padding: 0;
@@ -68,29 +68,72 @@ img{
     width: 100%;
     height: auto;
 }
+.position-relative{
+    position: relative;
+}
 /*==============  Common Content =============**/
-.section-header{
+.section-area{
+    margin-bottom: 60px;
+}
+.section-heading{
     font-weight: 500;
-    font-style: normal;
-    font-size: 60px;
-    line-height: 100%;
-    letter-spacing: 0%;
+    font-size: 3.75rem;
+    line-height: 1.1;
+    letter-spacing: 0;
     color: #1D1D1F;
 }
-
 .pre-header{
+    margin-bottom: 15px;
     font-weight: 500;
-    font-style: normal;
-    font-size: 15px;
-    line-height: 100%;
-    letter-spacing: 0%;
+    font-size: 0.938rem;
+    line-height: 1.1;
     color: #1D1D1F;
+    text-transform: capitalize;
 }
-
+button.btn-default,
+a.btn-default{
+	font-weight: 400;
+	font-size: 1rem;
+	display: inline-flex;
+	gap: 20px;
+	padding: 24px 30px;
+	background-color: #06C167;
+	border: 1px solid #06C167;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	-webkit-transition: all 700ms ease;
+	-moz-transition: all 700ms ease;
+	-ms-transition: all 700ms ease;
+	-o-transition: all 700ms ease;
+	transition: all 700ms ease;
+}
+button.btn-default:hover,
+a.btn-default:hover{
+    background-color: #1f9350;
+    border: 1px solid #06C167;
+    color: #fff;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-justify{
+    text-align: justify;
+}
 .white{
     color: #fff !important;
 }
-
+.stars-right img:hover,
+.benefit-left img:hover,
+.banner-img img:hover{
+	opacity: 0.8;
+}
 /*==============  Margin and padding settings =============**/
 .p-0{
     padding: 0 !important;
