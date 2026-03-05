@@ -1,29 +1,41 @@
-// const text="hello world"
-// const result=[];
-// for(let i=0;i<text.length;i++){
-//     console.log(text[i]);
-//     result.push(text[i]);
-// }
-// console.log(result);
-const text = "hello world";
-const result = [];
-let word = "";
+// Back to top
+const backTop = document.querySelector(".back-to-top");
 
-for (let i = 0; i < text.length; i++) {
-  if (text[i] !== " ") {
-    word += text[i]; 
-  } else {
-    if (word.length > 0) {
-      result.push(word); 
-      word = ""; // reset
+window.addEventListener('scroll',() => {
+    if(window.pageYOffset > 100){
+        backTop.classList.add('active')
     }
-  }
-}
+    else{
+       backTop.classList.remove('active')  
+    }
+})
 
-if (word.length > 0) {
-  result.push(word);
-}
 
-console.log(result);
+// Sticky Header
+const mainHeader = document.querySelector('.header');
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 0) {
+        mainHeader.classList.add('fixed');
+    } else {
+        mainHeader.classList.remove('fixed');
+    }
+});
 
-https://discord.gg/G8sXGVUC5h
+// Mobile Navigation
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector('.hamburger');
+    const navigation = document.querySelector('.navigation');
+    const navLinks = document.querySelectorAll('.navigation ul li a');
+
+    hamburger.addEventListener('click', function() {
+        navigation.classList.toggle('active');
+    });
+
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            navigation.classList.remove('active');
+        });
+    });
+
+});

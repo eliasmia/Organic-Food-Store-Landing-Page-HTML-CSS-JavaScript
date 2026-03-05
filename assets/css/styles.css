@@ -4,6 +4,17 @@
     z-index: 999;
     background: #F3FCF7;
     padding: 30px 0;
+		transition: all 0.5s ease;
+}
+.header.fixed {
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+		padding: 15px 0;
+    transition: all 0.5s ease;
 }
 .header .container {
 		display: flex;
@@ -50,7 +61,19 @@
 .navigation ul li a:hover {
 	color: #27AE60;
 }
-
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #27AE60;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
 /*============ Banner style ============*/
 .banner{
 	padding: 150px 0 100px 0;
@@ -322,7 +345,7 @@
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.1;
-    margin-bottom: 30px;
+    margin: auto auto 30px auto;
     max-width: 165px;
 }
 .feature-item-info a{
@@ -549,3 +572,32 @@
 	line-height: 100%;
 
 }
+
+/*============ Back to Top style ============*/
+.back-to-top{
+    position: fixed;
+    right: 32px;
+    bottom: 16px;
+    height: 60px;
+    width: 60px;
+    font-size: 2rem;
+    background-color: #f1f1f1;
+    color: #000;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    transition: all .5s;
+    opacity: 0;
+		outline: none;
+}
+
+a.back-to-top:hover, a.back-to-top:focus {
+    display: inline-flex;
+}
+.back-to-top.active{
+   opacity: 1;
+   pointer-events: auto; 
+}
+
